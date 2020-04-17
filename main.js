@@ -33,10 +33,13 @@ const nashvilleSoftwareSchool = {
     address: "500 Interstate Blvd. S"
 }
 
-console.log(nashvilleSoftwareSchool.instructors.partTime)
-console.log(nashvilleSoftwareSchool.instructors.fullTime)
-console.log(nashvilleSoftwareSchool.instructors.fullTime[4])
-console.log(nashvilleSoftwareSchool.instructors.fullTime[3])
+console.log("Part one!")
+for (let i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++) {
+    console.log(nashvilleSoftwareSchool.instructors.fullTime[i])
+}
+console.log("Part two!")
+console.log(nashvilleSoftwareSchool.instructors.fullTime[nashvilleSoftwareSchool.instructors.fullTime.length-1])
+console.log(nashvilleSoftwareSchool.instructors.partTime[0])
 
 const empireStateBuilding = {
     stories: 103,
